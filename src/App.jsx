@@ -4,10 +4,12 @@ import Home from "./pages/Home"
 import Auth from "./pages/Auth"
 import Checkout from "./pages/Checkout"
 import Navbar from "./components/Navbar";
+import AuthContext from './context/AuthContext'
 
 function App() {
 
   return (
+   <AuthContext>
      <div className="app ">
         <Navbar/>
         <Routes>
@@ -16,6 +18,7 @@ function App() {
             <Route path="checkout" element={<Checkout/>}/>
         </Routes>
      </div>
+   </AuthContext>
   )
 }
 
