@@ -4,7 +4,7 @@ import { AuthContext } from "../context/AuthContext";
 export default function Auth(){
     const [mode , setMode]=useState("signup")
     const [error,setError]=useState(null)
-    const {signup,user,logout,login} = useContext(AuthContext)
+    const {signUp,user,logout,login} = useContext(AuthContext)
     const {
         register,
         handleSubmit,
@@ -14,8 +14,8 @@ export default function Auth(){
     function onSubmit(data) {
         setError(null)
         let result;
-        if (mode===signup){
-        result=signup(data.email,data.password)
+        if (mode==="signup"){
+        result=signUp(data.email,data.password)
         }else{
         result=login(data.email,data.password)
         }
