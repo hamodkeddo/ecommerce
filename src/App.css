@@ -63,7 +63,7 @@ body {
 }
 
 .navbar-link:hover {
-  color: #007bff;
+  color: #0056b3;
 }
 
 .navbar-auth {
@@ -269,12 +269,13 @@ body {
 }
 
 .auth-link {
-  color: #007bff;
+  color: #0056b3;
   text-decoration: none;
   font-weight: 500;
 }
 
 .auth-link:hover {
+  color: #004494;
   text-decoration: underline;
 }
 
