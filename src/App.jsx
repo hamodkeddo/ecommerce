@@ -5,7 +5,7 @@ import Auth from "./pages/Auth"
 import Checkout from "./pages/Checkout"
 import Navbar from "./components/Navbar";
 import AuthProvider from './context/AuthContext'
-import ProductDetails from "./components/ProductCard"
+import ProductDetails from "./pages/ProductDetails"
 function App() {
 
   return (
